@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QU-CLASS | Choose Your Server</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --yellow: #FFE45C;
+    --blue: #A5E6FF;
+    --pink: #FF9ECF;
+    --black: #111111;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: var(--yellow);
+    color: var(--black);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    border-bottom: 3px solid var(--black);
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    background: white;
+    border: 3px solid var(--black);
+    padding: 5px 13px;
+    box-shadow: 4px 4px 0 var(--black);
+}
+
+.nav-label {
+    font-weight: 700;
+    font-size: 12px;
+    border: 2px solid var(--black);
+    padding: 8px 13px;
+    background: var(--white);
+}
+
+/* MAIN */
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 75px 25px 40px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--pink);
+    border: 2px solid var(--black);
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 800;
+    box-shadow: 3px 3px 0 var(--black);
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(42px, 8vw, 82px);
+    line-height: 0.98;
+    font-weight: 800;
+    letter-spacing: -4px;
+}
+
+h1 span {
+    display: block;
+}
+
+.hero p {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* SERVER CARDS */
+
+.servers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.card {
+    border: 3px solid var(--black);
+    padding: 30px;
+    background: white;
+    box-shadow: 9px 9px 0 var(--black);
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 13px 13px 0 var(--black);
+}
+
+.card.render {
+    background: var(--blue);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.number {
+    font-size: 13px;
+    font-weight: 800;
+    background: var(--yellow);
+    border: 2px solid var(--black);
+    padding: 7px 11px;
+}
+
+.card h2 {
+    font-size: 29px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.75;
+    overflow-wrap: anywhere;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background: var(--black);
+    color: white;
+    padding: 17px;
+    border: 3px solid var(--black);
+    font-weight: 800;
+    font-size: 15px;
+    box-shadow: 5px 5px 0 #888;
+    transition: 0.15s;
+}
+
+.btn:hover {
+    background: white;
+    color: var(--black);
+    box-shadow: 2px 2px 0 var(--black);
+    transform: translate(3px, 3px);
+}
+
+.btn:focus-visible {
+    outline: 4px solid #2563EB;
+    outline-offset: 4px;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 75px;
+    padding: 22px;
+    text-align: center;
+    border-top: 3px solid var(--black);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.footer span {
+    background: var(--pink);
+    padding: 4px 7px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .container {
+        padding-top: 55px;
+    }
+
+    .servers {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+    }
+
+    .navbar {
+        padding: 17px 5%;
+    }
+
+    .card {
+        padding: 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">QU.</div>
+    <div class="nav-label">MULTI-SERVER ACCESS ↗</div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <div class="tag">WELCOME TO QU-CLASS ✦</div>
+
+        <h1>
+            <span>YOUR CLASSROOM.</span>
+            <span>YOUR CHOICE.</span>
+        </h1>
+
+        <p>
+            Choose your server and continue learning.
+        </p>
+    </section>
+
+    <section class="servers">
+
+        <!-- SERVER 01 -->
+
+        <article class="card">
+            <div class="card-top">
+                <span class="number">SERVER 01</span>
+                <span>✦</span>
+            </div>
+
+            <h2>ANTIDEPLOY</h2>
+
+            <p>qu-class.antideploy.app</p>
+
+            <a
+                class="btn"
+                href="https://qu-class.antideploy.app/"
+                target="_blank"
+                rel="noopener noreferrer">
+                OPEN SERVER ↗
+            </a>
+        </article>
+
+        <!-- SERVER 02 -->
+
+        <article class="card render">
+            <div class="card-top">
+                <span class="number">SERVER 02</span>
+                <span>✦</span>
+            </div>
+
+            <h2>RENDER</h2>
+
+            <p>qu-class.onrender.com</p>
+
+            <a
+                class="btn"
+                href="https://qu-class.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                OPEN SERVER ↗
+            </a>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    ONE PLATFORM. TWO SERVERS.
+    <span>POWERED BY QU-CLASS.</span>
+</footer>
+
+</body>
+</html>
