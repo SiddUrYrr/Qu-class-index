@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ClassQU | Choose Your Server</title>
+<title>CLASSQU — Your University Companion</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
@@ -32,6 +32,8 @@ body {
     overflow-x: hidden;
 }
 
+/* NAVBAR */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -56,6 +58,8 @@ body {
     padding: 8px 13px;
     background: var(--white);
 }
+
+/* MAIN */
 
 .container {
     max-width: 1050px;
@@ -94,7 +98,30 @@ h1 span {
     font-size: 17px;
     font-weight: 600;
     margin-top: 20px;
+    line-height: 1.7;
 }
+
+/* FEATURES */
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.feature {
+    background: white;
+    border: 2px solid var(--black);
+    padding: 9px 13px;
+    font-size: 12px;
+    font-weight: 800;
+    box-shadow: 3px 3px 0 var(--black);
+}
+
+/* SERVER CARDS */
 
 .servers {
     display: grid;
@@ -147,6 +174,16 @@ h1 span {
     opacity: 0.75;
     overflow-wrap: anywhere;
     margin-bottom: 28px;
+    line-height: 1.7;
+}
+
+.server-url {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.85;
+    margin-top: 12px;
+    overflow-wrap: anywhere;
 }
 
 .btn {
@@ -176,6 +213,8 @@ h1 span {
     outline-offset: 4px;
 }
 
+/* FOOTER */
+
 .footer {
     margin-top: 75px;
     padding: 22px;
@@ -189,6 +228,8 @@ h1 span {
     background: var(--pink);
     padding: 4px 7px;
 }
+
+/* MOBILE */
 
 @media (max-width: 650px) {
     .container {
@@ -211,6 +252,10 @@ h1 span {
     .card {
         padding: 24px;
     }
+
+    .hero p {
+        font-size: 15px;
+    }
 }
 </style>
 </head>
@@ -219,40 +264,56 @@ h1 span {
 
 <header class="navbar">
     <div class="logo">QU.</div>
-    <div class="nav-label">CLASSQU • MULTI-SERVER ACCESS ↗</div>
+    <div class="nav-label">CLASSQU • STUDENT ACCESS ↗</div>
 </header>
 
 <main class="container">
 
     <section class="hero">
-        <div class="tag">WELCOME TO CLASSQU ✦</div>
+
+        <div class="tag">YOUR UNIVERSITY COMPANION ✦</div>
 
         <h1>
-            <span>YOUR CLASSROOM.</span>
-            <span>YOUR CHOICE.</span>
+            <span>YOUR ATTENDANCE.</span>
+            <span>YOUR CONTROL.</span>
         </h1>
 
         <p>
-            One platform. Two servers. Choose what works for you.
-            <br>⚡ A stable internet connection is recommended.
+            Everything you need to stay on top of university life.
+            <br>
+            Attendance, timetable, assignments and smart notifications.
         </p>
+
     </section>
+
+    <!-- FEATURES -->
+
+    <section class="features">
+        <div class="feature">✦ ATTENDANCE TRACKER</div>
+        <div class="feature">✦ TIMETABLE</div>
+        <div class="feature">✦ ASSIGNMENT TRACKER</div>
+        <div class="feature">✦ SMART NOTIFICATIONS</div>
+    </section>
+
+    <!-- SERVERS -->
 
     <section class="servers">
 
-        <!-- SERVER 01 -->
-
         <article class="card">
+
             <div class="card-top">
                 <span class="number">SERVER 01</span>
                 <span>✦</span>
             </div>
 
             <h2>ANTIDEPLOY</h2>
+
             <p>
-                Cold start may take approximately 5–10 seconds.
-                <br><br>
-                qu-class.antideploy.app
+                Access ClassQU through our alternative hosting server.
+                <br>
+                <span class="server-url">
+                    qu-class.antideploy.app
+                </span>
             </p>
 
             <a
@@ -260,32 +321,36 @@ h1 span {
                 href="https://qu-class.antideploy.app/"
                 target="_blank"
                 rel="noopener noreferrer">
-                OPEN SERVER ↗
+                OPEN CLASSQU ↗
             </a>
+
         </article>
 
-        <!-- SERVER 02 -->
-
         <article class="card render">
+
             <div class="card-top">
                 <span class="number">SERVER 02</span>
                 <span>✦</span>
             </div>
 
             <h2>RENDER</h2>
+
             <p>
-                Alternative server for accessing ClassQU.
-                <br><br>
-                qu-class.onrender.com
+                Another hosting option to access your university companion.
+                <br>
+                <span class="server-url">
+                    qu-class.onrender.com
+                </span>
             </p>
 
             <a
                 class="btn"
-                href="https://qu-class.onrender.com"
+                href="https://qu-class.onrender.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                OPEN SERVER ↗
+                OPEN CLASSQU ↗
             </a>
+
         </article>
 
     </section>
