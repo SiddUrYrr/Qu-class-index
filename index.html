@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CLASSQU — Your University Companion</title>
+<title>QU-CLASS | Your University Companion</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
@@ -229,6 +229,22 @@ h1 span {
     padding: 4px 7px;
 }
 
+.github-link {
+    display: inline-block;
+    margin-top: 17px;
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: 0.2s ease;
+}
+
+.github-link:hover {
+    opacity: 0.65;
+    transform: translateY(-2px);
+}
+
 /* MOBILE */
 
 @media (max-width: 650px) {
@@ -262,16 +278,20 @@ h1 span {
 
 <body>
 
+<!-- NAVBAR -->
+
 <header class="navbar">
     <div class="logo">QU.</div>
-    <div class="nav-label">CLASSQU • STUDENT ACCESS ↗</div>
+    <div class="nav-label">QU-CLASS • STUDENT ACCESS ↗</div>
 </header>
 
 <main class="container">
 
+    <!-- HERO -->
+
     <section class="hero">
 
-        <div class="tag">YOUR UNIVERSITY COMPANION ✦</div>
+        <div class="tag">WELCOME TO QU-CLASS ✦</div>
 
         <h1>
             <span>YOUR ATTENDANCE.</span>
@@ -295,9 +315,11 @@ h1 span {
         <div class="feature">✦ SMART NOTIFICATIONS</div>
     </section>
 
-    <!-- SERVERS -->
+    <!-- SERVER OPTIONS -->
 
     <section class="servers">
+
+        <!-- SERVER 01 -->
 
         <article class="card">
 
@@ -307,23 +329,27 @@ h1 span {
             </div>
 
             <h2>ANTIDEPLOY</h2>
-<p>
-    Server may take 5–10 seconds to wake up.
-    Please wait while it gets ready.
-    <span class="server-url">
-        qu-class.antideploy.app
-    </span>
-</p>
+
+            <p>
+                Server may take 5–10 seconds to wake up.
+                Please wait while it gets ready.
+
+                <span class="server-url">
+                    qu-class.antideploy.app
+                </span>
+            </p>
 
             <a
                 class="btn"
                 href="https://qu-class.antideploy.app/"
                 target="_blank"
                 rel="noopener noreferrer">
-                OPEN CLASSQU ↗
+                OPEN QU-CLASS ↗
             </a>
 
         </article>
+
+        <!-- SERVER 02 -->
 
         <article class="card render">
 
@@ -332,20 +358,22 @@ h1 span {
                 <span>✦</span>
             </div>
 
-           <h2>RENDER</h2>
-<p>
-    Your alternate gateway to ClassQU.
-    <span class="server-url">
-        qu-class.onrender.com
-    </span>
-</p>
+            <h2>RENDER</h2>
+
+            <p>
+                Your alternate gateway to QU-CLASS.
+
+                <span class="server-url">
+                    qu-class.onrender.com
+                </span>
+            </p>
 
             <a
                 class="btn"
                 href="https://qu-class.onrender.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                OPEN CLASSQU ↗
+                OPEN QU-CLASS ↗
             </a>
 
         </article>
@@ -354,9 +382,23 @@ h1 span {
 
 </main>
 
+<!-- FOOTER -->
+
 <footer class="footer">
+
     BUILT FOR STUDENTS.
-    <span>POWERED BY CLASSQU.</span>
+    <span>POWERED BY QU-CLASS.</span>
+
+    <br>
+
+    <a
+        class="github-link"
+        href="https://github.com/SiddUrYrr"
+        target="_blank"
+        rel="noopener noreferrer">
+        MORE PROJECTS? CHECK MY GITHUB ↗
+    </a>
+
 </footer>
 
 </body>
